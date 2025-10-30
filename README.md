@@ -1,8 +1,15 @@
-# React + Vite
+Blood Donation Management System (BLD-MAIN)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a full-stack web application for managing blood donations, donor registration, and request tracking.
+It includes a React + Vite frontend, a Node.js + Express backend, and a MySQL database.
 
-Currently, two official plugins are available:
+Features
+Donor registration and profile management
+Receiver requests for blood by type and location
+Admin panel to verify donors and manage requests
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
+Frontend-React + Vite
+Backend-Node.js + Express
+Database-MySQL
+Styling-CSS 
