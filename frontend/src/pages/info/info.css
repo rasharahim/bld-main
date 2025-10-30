@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  * {
+    scrollbar-width: none;
+  }
+  
+  /* Hide scrollbar for Internet Explorer and Edge */
+  body {
+    -ms-overflow-style: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 500px;
+  }
+  
+  .left {
+    flex: 1;
+    background: linear-gradient(0deg, rgba(106, 0, 0) 39%, rgba(202, 25, 25) 100%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .left p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .left span {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right h1 {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .right form label {
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  .right form input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .right form input:focus {
+    border-color: #b30000;
+    outline: none;
+  }
+  
+  .right form button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #b30000;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .right form button:hover {
+    background-color: #8c0000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      padding: 20px;
+    }
+  
+    .left h1 {
+      font-size: 2rem;
+    }
+  
+    .right h1 {
+      font-size: 1.5rem;
+    }
+  
+    .right form button {
+      width: 100%;
+    }
+  }

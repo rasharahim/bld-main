@@ -1,0 +1,100 @@
+body{
+    
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.Register{
+    
+    height: 100vh;
+    background: rgb(106,0,0);
+    background: radial-gradient(circle, rgba(106,0,0,1) 28%, rgba(204,44,44,1) 100%);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        width: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 400px;
+        overflow: hidden;
+     
+        
+
+
+        .left{
+            
+            flex: 1;
+            background:linear-gradient(0deg, rgba(106,0,0,0.5440301120448179) 39%, rgba(202,25,25,0.5328256302521008) 100%),url(https://images.pexels.com/photos/6823567/pexels-photo-6823567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) center;
+            background-size: cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: white;
+
+            
+            h1{
+                font-size: 80px;
+                line-height: 100px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+
+            }
+            p{}
+            span{
+                font-size: 14px;
+            }
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                border-radius: 10px;
+                color: brown;
+                font-weight: bold;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            h1{
+                color: #555;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                }
+                button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: brown;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                justify-content: center;
+                cursor: pointer;
+                }
+            }
+        }
+    }
+}

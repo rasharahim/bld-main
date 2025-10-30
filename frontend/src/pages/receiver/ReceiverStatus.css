@@ -1,0 +1,156 @@
+.receiver-status-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.request-details {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-details h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.request-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.request-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.request-info strong {
+  color: #34495e;
+  margin-right: 0.5rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.donor-list-container h2 {
+  color: #2c3e50;
+  margin: 2rem 0 1.5rem;
+  font-size: 1.8rem;
+}
+
+.donor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.donor-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.donor-card:hover {
+  transform: translateY(-5px);
+}
+
+.donor-card p {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+.donor-card strong {
+  color: #34495e;
+  margin-right: 0.5rem;
+}
+
+.select-donor-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.select-donor-btn:hover {
+  background-color: #2980b9;
+}
+
+.select-donor-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #e74c3c;
+  background: #fdf0ed;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.no-donors {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .request-info {
+    grid-template-columns: 1fr;
+  }
+
+  .donor-list {
+    grid-template-columns: 1fr;
+  }
+
+  .request-details,
+  .donor-card {
+    padding: 1.5rem;
+  }
+} 

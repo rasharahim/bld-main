@@ -1,0 +1,47 @@
+[
+    {
+      "name": "India",
+      "states": [
+        {
+          "name": "Tamil Nadu",
+          "districts": ["Chennai", "Madurai", "Coimbatore"]
+        },
+        {
+          "name": "Maharashtra",
+          "districts": ["Mumbai", "Pune", "Nagpur"]
+        },
+        {
+          "name": "J&K",
+          "districts": ["Badgam", "Srinagar", "Baramulla"]
+        },
+        {
+          "name": "Kerala",
+          "districts": ["Kochi", "Kozhikode", "Thiruvananthapuram"]
+        }
+
+      ]
+    },
+    {
+      "name": "United States",
+      "states": [
+        {
+          "name": "California",
+          "districts": ["Los Angeles", "San Diego", "San Francisco"]
+        }
+        
+      ]
+    },
+    {
+      "name": "Canada",
+      "states": [
+        {
+          "name": "Ontario",
+          "districts": ["Toronto", "Ottawa", "Mississauga"]
+        },
+        {
+          "name": "Quebec",
+          "districts": ["Montreal", "Quebec City", "Laval"]
+        }
+      ]
+    }
+  ]

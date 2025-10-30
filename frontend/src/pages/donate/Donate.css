@@ -1,0 +1,13 @@
+.donate {
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; /* To account for the fixed dashboard */
+  }
+  
+  .donate h1 {
+    color: #b30000;
+  }
+  
+  .donate p {
+    color: #555;
+  }

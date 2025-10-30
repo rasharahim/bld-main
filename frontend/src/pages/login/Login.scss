@@ -1,0 +1,125 @@
+$primary-color: #b30000;
+$secondary-color: #8c0000;
+
+.Login {
+  margin: 0;
+  height: 100vh;
+  background: rgb(106,0,0);
+  background: radial-gradient(circle, rgba(106,0,0,1) 28%, rgba(204,44,44,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(0deg, rgba(106, 0, 0, 0.544) 39%, rgba(202, 25, 25, 0.533) 100%),
+        url('https://images.pexels.com/photos/4226922/pexels-photo-4226922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: white;
+
+      h1 {
+        font-size: 80px;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        color: $primary-color;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+
+      h1 {
+        color: #555;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 10px;
+          font-size: 1rem;
+          outline: none;
+
+          &:focus {
+            border-bottom-color: $primary-color;
+          }
+        }
+
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: $primary-color;
+          border-radius: 10px;
+          color: white;
+          font-weight: bold;
+          justify-content: center;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: $secondary-color;
+          }
+        }
+      }
+
+      .forgot-password {
+        text-align: right;
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 0.875rem;
+        margin-top: 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

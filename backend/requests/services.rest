@@ -1,0 +1,54 @@
+### Register a new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "fullname": "shibu",
+  "phoneNumber": "1234567",
+  "email": "shibu@example.com",
+  "password": "password123",
+  "confirmPassword": "password123"
+  
+}
+
+### Login with the registered user
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "khaja1829@gmail.com",
+  "password": "mnbvcxz"
+}
+###
+GET http://localhost:5000/api/profile
+Authorization: Bearer YeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJyb2xlIjoidXNlciIsImJsb29kVHlwZSI6bnVsbCwiaWF0IjoxNzQzNjI3MjU2LCJleHAiOjE3NDM2MzA4NTZ9.BtFaFZhXtC2WAnaao_BGKikpEPw7m_hJqRky8ZByh
+###
+
+GET http://localhost:5000/api/notifications
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJyb2xlIjoidXNlciIsImJsb29kVHlwZSI6bnVsbCwiaWF0IjoxNzQzNjI5OTk4LCJleHAiOjE3NDM2MzM1OTh9.nBf_5bHvqdpGlID3gaH1xxSSi6yl6rpSyXaCkC-PQ1E
+### Login Request to Get Token
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "ami@gmail.com",
+    "password": "zxcvbnm"
+}
+
+###
+GET http://localhost:5000/api/donors
+###
+GET http://localhost:5000/api/donors/status?filter=approved
+###
+PUT http://localhost:5000/api/donors/40  # Replace :id with actual donor ID
+Content-Type: application/json
+
+{
+   "status": "approved"
+}
+###
+GET http://localhost:5000/api/donors/pending
+###
+POST http://localhost:5000/api/receivers
+###
+GET http://localhost:5000/api/profile

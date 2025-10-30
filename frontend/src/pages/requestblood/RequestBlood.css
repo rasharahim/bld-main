@@ -1,0 +1,13 @@
+.request-blood {
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; /* To account for the fixed dashboard */
+  }
+  
+  .request-blood h1 {
+    color: #b30000;
+  }
+  
+  .request-blood p {
+    color: #555;
+  }
